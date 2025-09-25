@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ngày Kỷ Niệm Yêu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      font-family: 'Roboto', sans-serif;
+      color: #5a2a2a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px 50px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      margin-bottom: 0.2rem;
+      color: #ff3c6e;
+      text-shadow: 0 4px 8px rgba(255, 60, 110, 0.7);
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: #833a55;
+    }
+
+    .counter {
+      background: rgba(255, 255, 255, 0.35);
+      padding: 25px 35px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(255, 60, 110, 0.3);
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      max-width: 650px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .counter > div {
+      flex: 1;
+      font-size: 2.8rem;
+      font-weight: 700;
+      position: relative;
+      color: #b53f6a;
+    }
+
+    .counter > div::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #b15a78;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+      max-width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(255, 60, 110, 0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 60, 110, 0.6);
+    }
+
+    .message {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(255, 60, 110, 0.3);
+      color: #62293d;
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 30px;
+      user-select: none;
+    }
+
+    footer {
+      font-style: italic;
+      color: #bb6f8b;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      .counter {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <h1>Ngày Kỷ Niệm Tình Yêu</h1>
+  <h2>Chúng ta đã bên nhau</h2>
+
+  <div class="counter">
+    <div id="days" data-label="Ngày">0</div>
+    <div id="hours" data-label="Giờ">0</div>
+    <div id="minutes" data-label="Phút">0</div>
+    <div id="seconds" data-label="Giây">0</div>
+  </div>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Kỷ niệm 1" />
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Kỷ niệm 2" />
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Kỷ niệm 3" />
+    <img src="https://images

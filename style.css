@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffccd5;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #d6336c;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+.date-start {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.timeline, .gallery, .message, .countdown {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin: 15px 0;
+  padding-left: 12px;
+  border-left: 3px solid #ff69b4;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.images img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+.message {
+  background: #fff;
+  border: 2px dashed #ff69b4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffccd5;
+  margin-top: 30px;
+}
